@@ -1,0 +1,33 @@
+models:
+  ball_net: models/ball_net/best.pt
+  player: models/player/best.pt
+  court: models/court_keypoints/best.pt
+inference:
+  confidence: 0.25
+tracking:
+  player_tracker: botsort
+  centroid_max_gap_frames: 20
+ball:
+  max_jump_px: 180
+  max_gap_frames: 5
+scoring:
+  confidence: 0.45
+  confirmation_frames: 2
+  gap_tolerance_seconds: 0.5
+  cooldown_seconds: 2.0
+  attribution_window_seconds: 1.8
+  attribution_max_distance_px: 115
+  attribution_min_support_frames: 3
+team_assignment:
+  min_observations: 5
+  min_separation: 0.12
+  confidence_threshold: 0.25
+  max_observations_per_track: 24
+  # Set track IDs after checking early frames to anchor the group names.
+  team_a_reference_track_ids: []
+  team_b_reference_track_ids: []
+  manual_assignments: {}
+court:
+  dimensions_m: [28.65, 15.24]
+  keypoint_mapping: null # Must be explicitly validated for this checkpoint before calibration.
+visual_config: configs/visual_config.yaml

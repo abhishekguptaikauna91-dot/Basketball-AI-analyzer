@@ -1,0 +1,42 @@
+# BGR colours for OpenCV rendering. Team accents are configurable by the user.
+team_colors:
+  Team A: [90, 190, 255]
+  Team B: [255, 175, 85]
+team_names:
+  Team A: TEAM A
+  Team B: TEAM B
+accent_bgr: [35, 205, 225]
+ball_bgr: [40, 235, 245]
+basket_bgr: [40, 170, 255]
+unknown_player_bgr: [75, 220, 150]
+text_bgr: [245, 248, 252]
+panel_alpha: 0.84
+show_scoreboard: true
+show_players: true
+show_ball: true
+show_baskets: true
+show_events: true
+show_court_status: true
+show_confidence: true
+show_ids: true
+show_player_stats: false
+show_jersey_numbers: false
+lightweight_mode: false
+scoreboard_position: [20, 20]
+court_status_position: [20, 102]
+event_duration_seconds: 2.2
+ball_trail_length: 18
+player_trail_length: 14
+show_player_trails: true
+trail_bgr: [120, 170, 175]
+stale_ball_frames: 5
+player_line_thickness: 2
+bracket_length: 13
+label_scale: 0.43
+label_padding: 8
+label_offset_px: 5
+safe_bottom_ratio: 0.14
+basket_min_confidence: 0.4
+mini_court_enabled: true # Renderer keeps it disabled until a validated mapping is supplied.
+mini_court_position: [0, 0]
+mini_court_size: [230, 128]
